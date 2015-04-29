@@ -6,14 +6,14 @@ public class Calculator {
 	/*
 	 * Este metodo calcula el seno de un angulo
 	 */
-	static Double sin(double n) {
+	public static Double sin(double n){
 		return null;
 	}
 
 	/*
 	 * Escribir todos los numeros del number al 0 de step en step.
 	 */
-	static int[] stepThisNumber(int number, int step) {
+	public static int[] stepThisNumber(int number, int step) {
 		return null;
 	}
 
@@ -21,7 +21,7 @@ public class Calculator {
 	 * Modulo al que se le pasa un numero entero del 0 al 20 y devuelve los
 	 * divisores que tiene.
 	 */
-	static int[] divisors(int n) {
+	public static int[] divisors(int n) {
 		return null;
 	}
 
@@ -30,7 +30,7 @@ public class Calculator {
 	 * apuesta de la primitiva, y la segunda con los 6 numeros ganadores. La
 	 * funcion debe devolver el numero de aciertos.
 	 */
-	static Integer checkMyBet(List<Integer> apuesta, List<Integer> aciertos) {
+	public static Integer checkMyBet(List<Integer> apuesta, List<Integer> aciertos) {
 		return null;
 	}
 
@@ -38,7 +38,7 @@ public class Calculator {
 	 * Pedir un numero de 0 a 99 y mostrarlo escrito. Por ejemplo, para 56
 	 * mostrar: cincuenta y seis
 	 */
-	static String speakToMe(int n) {
+	public static String speakToMe(int n) {
 		return null;
 	}
 
@@ -46,14 +46,14 @@ public class Calculator {
 	 * Este metodo devuelve cierto si el anyo de la fecha es bisiesto fecha
 	 * dd-MM-yyyy
 	 */
-	static boolean isLeapYear(String fecha) {
+	public static boolean isLeapYear(String fecha) {
 		return false;
 	}
 
 	/*
 	 * Este metodo devuelve cierto si la fecha es valida
 	 */
-	static boolean isValidDate(String date) {
+	public static boolean isValidDate(String date) {
 		return false;
 	}
 }
