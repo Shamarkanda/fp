@@ -125,6 +125,8 @@ public class Calculator {
 			return year%4 == 0 && (year%100 != 0 || year%400 == 0);
 		}catch(StringIndexOutOfBoundsException e){
 			return false;
+		}catch(NumberFormatException e){
+			return false;
 		}
 	}
 
