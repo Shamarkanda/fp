@@ -39,7 +39,7 @@ public class CalculatorTest {
 		Assert.assertNull(divisors(0));
 		Assert.assertArrayEquals(divisors(1), new int[] { 1 });
 		Assert.assertArrayEquals(divisors(12), new int[] { 12, 6, 4, 3, 2, 1 });
-		Assert.assertArrayEquals(divisors(20), new int[] { 20, 10, 5, 2, 1 });
+		Assert.assertArrayEquals(divisors(20), new int[] { 20, 10, 5, 4, 2, 1 });
 		System.out.println("1P");
 	}
 
