@@ -69,6 +69,7 @@ public class CalculatorTest {
 		Assert.assertNotNull(speakToMe(0));
 		Assert.assertEquals(speakToMe(0), "Cero");
 		Assert.assertEquals(speakToMe(10), "Diez");
+		Assert.assertEquals(speakToMe(13), "Trece");
 		Assert.assertEquals(speakToMe(20), "Veinte");
 		Assert.assertEquals(speakToMe(60), "Sesenta");
 		Assert.assertEquals(speakToMe(61), "Sesenta y uno");
@@ -80,6 +81,8 @@ public class CalculatorTest {
 	@Test
 	public void testIsLeapYear() {
 		Assert.assertNotNull(isLeapYear(""));
+		Assert.assertFalse(isLeapYear("asdfw"));
+		Assert.assertFalse(isLeapYear("asdfsfwqpo"));
 		Assert.assertTrue(isLeapYear("01-01-1904"));
 		Assert.assertTrue(isLeapYear("01-01-1928"));
 		Assert.assertFalse(isLeapYear("01-01-2100"));
@@ -96,6 +99,7 @@ public class CalculatorTest {
 		Assert.assertFalse(isValidDate("asdasd"));
 		Assert.assertFalse(isValidDate("21-12"));
 		Assert.assertFalse(isValidDate("12-2000"));
+		Assert.assertFalse(isValidDate("-30-12-2005"));
 		Assert.assertFalse(isValidDate("00-12-2000"));
 		Assert.assertFalse(isValidDate("32-12-2000"));
 		Assert.assertFalse(isValidDate("31-13-2000"));
