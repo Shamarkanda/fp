@@ -20,7 +20,7 @@ public class Calculator {
 			number -= step;
 			arrayListStepsNumber.add(number);
 		}
-		int [] arrayStepsNumber = new int [arrayListStepsNumber.size()];
+		Integer [] arrayStepsNumber = arrayListStepsNumber.toArray(new Integer [arrayListStepsNumber.size()]);
 		int count = 0;
 		for(Integer stepNumber: arrayListStepsNumber){
 			arrayStepsNumber[count] = stepNumber;
@@ -123,9 +123,7 @@ public class Calculator {
 		try{
 			int year = Integer.parseInt(fecha.substring(6));
 			return year%4 == 0 && (year%100 != 0 || year%400 == 0);
-		}catch(StringIndexOutOfBoundsException e){
-			return false;
-		}catch(NumberFormatException e){
+		}catch(RuntimeException e){
 			return false;
 		}
 	}
@@ -155,7 +153,7 @@ public class Calculator {
 						}
 				}
 			}
-		}catch(StringIndexOutOfBoundsException e){}catch(NumberFormatException e){}
+		}catch(RuntimeException e){};
 		return right;
 	}
 }
